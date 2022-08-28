@@ -16,6 +16,7 @@ The minimum of the convex function is much easier to reach: we just need to foll
 Finding the minimum of a convex function is called ... Convex Optimization ! You might have already heard about something called Gradient Descent before. This is an algorithm which does exactly that: following the slope to the cavity.
 
 This project is meant to be an introduction to some convex optimization tools and to implement your own optimization algorithm.
+![img.png](Pic/img.png)
 ## Description
 To get a feel with the problem, we are going to start with a simple function to optimize:
 
@@ -45,15 +46,19 @@ f' = 4*(x - 1)^3 + 2x
 It will plot the function with the values received as parameters.
 
 - def find_root_bisection(f, min, max)
+- ![img_2.png](Pic/img_2.png)
 It will return the zero of a function using simple dichotomous algorithm between min and max for the function f.
 
 - def find_root_newton_raphson(f, f_deriv)
+- ![img_3.png](Pic/img_3.png)
 It will return the zero of a function using the Newton-Raphson's method between min and max for the function f.
 
 - def gradient_descent(f, f_prime, start, learning_rate = 0.1)
+- ![img_1.png](Pic/img_1.png)
 Write a simple gradient descent function which finds the minimum of a function f
 
 - def solve_linear_problem(A, b, c):
+- ![img_4.png](Pic/img_4.png)
 Write a function solving the linear problem using simplex method. (see the first part to have more details)
 A = np.array([[2,1],[-4,5],[1,-2]])
 b = np.array([10,8,3])
